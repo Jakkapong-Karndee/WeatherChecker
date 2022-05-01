@@ -8,7 +8,9 @@
   <title>Login</title>
   <!------ Include the above in your HEAD tag ---------->
 </head>
-
+<% if (messages.error) { %> 
+  <%= messages.error %> 
+  <% } %> 
 <body>
   <h1 class="text-center pt-5">WeatherChecker</h1>
   <div id="login">
@@ -34,7 +36,7 @@
                   required>
               </div>
               <div class="form-group">
-                <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                <input type="submit" name="submit" class="btn btn-info btn-md" href="/" value="submit">
               </div>
               <div id="register-link" class="text-right">
                 <a href="/signup" class="text-info">Register here</a>
